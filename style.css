@@ -10,10 +10,14 @@ body{
 }
 .navbar__s1{
     display:flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: center;
     padding:20px;
     flex-wrap: wrap;
+    position:sticky;
+    top:0;
+    background-color: white;
+    z-index: 1;
    
 }
 .navbar__s1__logo{
@@ -30,12 +34,16 @@ body{
     align-items: center;
 }
 .navbar__s1__items p{
+    gap:5px;
     font-weight: bolder;
     padding-top:10px;
     padding-bottom:10px;
     padding-left:16px;
     padding-right:16px;
     font-size: 16px;
+   
+    border-radius:30px; 
+    
 }
 .navbar__s1__items a{
     color: black;
@@ -156,6 +164,10 @@ body{
     width:50%;
     gap:10px;
     align-items: center;
+    position:sticky;
+    top:0;
+    background-color: white;
+    z-index: 2;
 
 }
 .search__bar input{
@@ -193,8 +205,9 @@ body{
 }
 .hotels__title{
     display: flex;
-     margin-left:80px;
-    margin-right:50px;
+    padding-left: 50px;
+     /* margin-left:80px;
+    margin-right:50px; */
     flex-wrap: wrap;
     padding-top: 10px;
 }
@@ -208,10 +221,9 @@ body{
 }
 .hotels{
     padding-top: 5px;
-    display:flex;
-    margin-left:70px;
-    margin-right:50px;
-    flex-wrap: wrap;
+    /* display:flex; */
+    /* margin-left:70px;
+    margin-right:50px;  */
     
     
 }
@@ -237,6 +249,7 @@ body{
 .hotels__names{
   display:flex;
   flex-wrap: wrap;
+  justify-content: space-evenly;
   align-items: center;
   padding-top: 10px;
   
@@ -247,8 +260,9 @@ body{
 }
 .places__title{
     display: flex;
-     margin-left:80px;
-    margin-right:50px;
+    padding-left: 50px;
+     /* margin-left:80px;
+    margin-right:50px; */
     flex-wrap: wrap;
     padding-top: 10px;
 }
@@ -262,9 +276,10 @@ body{
 }
 .places{
     padding-top: 5px;
-    display:flex;
-    margin-left:80px;
-    margin-right:50px;
+    /* padding-left: 50px; */
+    /* display:flex; */
+    /* margin-left:80px;
+    margin-right:50px; */
     flex-wrap: wrap;
     align-items: center;
     
@@ -294,7 +309,7 @@ body{
 .places__names{
   display:flex;
   flex-wrap: wrap;
-  
+  justify-content: space-evenly;
   padding-top: 10px;
   
 }
