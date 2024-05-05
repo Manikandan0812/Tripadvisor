@@ -4,10 +4,11 @@
 }
 body{
     font-family: "Roboto", sans-serif,Arial;
-  font-weight: 400;
-  font-size: 18px;
+  
+
   
 }
+/* Navbar Section 1 */
 .navbar__s1{
     display:flex;
     justify-content: space-evenly;
@@ -28,9 +29,7 @@ body{
 }
 .navbar__s1__items{
     display: flex;
-    
-    
-    cursor:pointer;
+     cursor:pointer;
     align-items: center;
 }
 .navbar__s1__items p{
@@ -57,8 +56,6 @@ body{
     
 }
 .navbar__s1__items p:hover{
-    border:solid #EFEDED 1px;
-    border-radius:30px; 
     background-color:#EFEDED;
     
 }
@@ -96,30 +93,30 @@ body{
     align-items: center;   
 }
 .navbar__s1__login div:hover{
-    border:solid #EFEDED 1px;
+   
     border-radius:20px; 
     background-color:#EFEDED;
     
       
 }
+/* Navbar Section 2 */
 .title{
     text-align: center;
-    margin-top: 20px;
+    padding-top: 20px;
     font-size:28px;
     font-weight:bolder;
 }
 .navbar__s2{
     display:flex;
     flex-wrap: wrap;
-    margin-top:15px;
+    padding-top:15px;
     justify-content: center;
     gap:20px;
     cursor: pointer;
     font-weight: bold;
-    font-size: 18px;
+    font-size: 16px;
 }
 .navbar_s2__items1{
-    display:flex;
     padding-top:10px;
     padding-bottom:10px;
     border-bottom: solid black 2px;
@@ -146,8 +143,9 @@ body{
     color:#B3B6B7   ;
     border-bottom: solid black 2px;
 }
+/* Search Bar */
 .search{
-    margin-top: 20px;
+    padding-top: 20px;
     justify-content: center;
     display: flex;
     gap:10px;
@@ -164,10 +162,9 @@ body{
     width:50%;
     gap:10px;
     align-items: center;
-    position:sticky;
-    top:0;
+    
     background-color: white;
-    z-index: 2;
+    
 
 }
 .search__bar input{
@@ -203,12 +200,9 @@ body{
 .search__button button:hover{
     background-color:#D0D3D4 ;
 }
+/*Hotels  */
 .hotels__title{
-    display: flex;
     padding-left: 50px;
-     /* margin-left:80px;
-    margin-right:50px; */
-    flex-wrap: wrap;
     padding-top: 10px;
 }
 .hotels__title h3{
@@ -219,15 +213,6 @@ body{
     font-size: 16px;
     color:grey;
 }
-.hotels{
-    padding-top: 5px;
-    /* display:flex; */
-    /* margin-left:70px;
-    margin-right:50px;  */
-    
-    
-}
-
 
 .hotel__images{
     position:relative;
@@ -235,34 +220,28 @@ body{
 }
 .hotel__images img{
     border-radius: 10px;
-    width:270px;
     
 }
 .hotel__images h1{
+    font-size: 22px;
     position:absolute;
     color:white;
     left:15px;
     bottom:10px;
-    width:200px;
 
 }
 .hotels__names{
   display:flex;
   flex-wrap: wrap;
-  justify-content: space-evenly;
+  justify-content: space-around;
   align-items: center;
-  padding-top: 10px;
+  padding-top: 20px;
   
 }
-.hotels__names__list{
-    padding:10px;
-    font-size: 11px;
-}
+
 .places__title{
     display: flex;
     padding-left: 50px;
-     /* margin-left:80px;
-    margin-right:50px; */
     flex-wrap: wrap;
     padding-top: 10px;
 }
@@ -274,17 +253,7 @@ body{
     font-size: 16px;
     color:grey;
 }
-.places{
-    padding-top: 5px;
-    /* padding-left: 50px; */
-    /* display:flex; */
-    /* margin-left:80px;
-    margin-right:50px; */
-    flex-wrap: wrap;
-    align-items: center;
-    
-    
-}
+
 
 
 .places__images{
@@ -307,17 +276,16 @@ body{
     padding-top:5px ;
 }
 .places__names{
+    
   display:flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
   padding-top: 10px;
   
 }
-.places__names__list{
-  padding: 10px;
-    font-size: 13px;
+
     
-}
+
 .places__images i{
     font-size: 18px;
     color: black;
@@ -328,27 +296,11 @@ body{
     padding:8px;
     border-radius: 50%;
 }
-.rental{
-padding-left: 80px;
-padding-top: 50px;
-}
-.rental__homes{
-    display: flex;
-    flex-wrap: wrap;
-    padding: 20px;
-    
 
-}
-.rental__homes img{
-    border-radius: 10px;
-}
-.rental__homes div{
-    padding: 5px;
-    padding-left: 30px;
-}
 .footer{
 
     background-color:#FAF1FD ;
+    margin-top: 20px;
     padding-top:20px;
     padding-left: 80px;
     padding-right:50px;
@@ -442,6 +394,14 @@ padding-top: 50px;
 }
 .footer__s2__section2__icons a{
     padding-left: 20px;
+}
+@media screen and (max-width:600px){
+ .hotel__images{
+    flex-basis: 5%;
+ } 
+ .places__images{
+    flex-basis: 5%;
+ }  
 }
 
 
